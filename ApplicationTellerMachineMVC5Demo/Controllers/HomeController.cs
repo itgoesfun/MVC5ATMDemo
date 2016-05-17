@@ -10,6 +10,7 @@ namespace ApplicationTellerMachineMVC5Demo.Controllers
     {
         public ActionResult Index()
         {
+
             return View();
         }
 
@@ -25,6 +26,16 @@ namespace ApplicationTellerMachineMVC5Demo.Controllers
             ViewBag.Message = "Your contact page.";
 
             return View();
+        }
+
+        public ActionResult Serial(string letterCase)
+        {
+            var serial = "ASPNETMVC5ATM1";
+            if(letterCase == "lower")
+            {
+                return Content(serial.ToLower());
+            }
+            return RedirectToAction("Index");
         }
     }
 }
