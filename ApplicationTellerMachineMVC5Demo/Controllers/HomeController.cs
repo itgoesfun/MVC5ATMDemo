@@ -23,7 +23,16 @@ namespace ApplicationTellerMachineMVC5Demo.Controllers
 
         public ActionResult Contact()
         {
-            ViewBag.Message = "Your contact page.";
+            ViewBag.TheMessage = "Having trouble? Send us a message";
+
+            return View();
+        }
+
+        [HttpPost]
+        public ActionResult Contact(string message)
+        {
+            //Todo: send message to HQ
+            ViewBag.TheMessage = "Thanks. We got your message";
 
             return View();
         }

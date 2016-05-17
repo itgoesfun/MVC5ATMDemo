@@ -1,8 +1,8 @@
-﻿using ApplicationTellerMachineMVC5Demo.Models;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
+﻿//using ApplicationTellerMachineMVC5Demo.Models;
+//using System;
+//using System.Collections.Generic;
+//using System.Linq;
+//using System.Web;
 using System.Web.Mvc;
 
 namespace ApplicationTellerMachineMVC5Demo.Controllers
@@ -16,11 +16,11 @@ namespace ApplicationTellerMachineMVC5Demo.Controllers
         }
 
         // GET: CheckingAccount/Details
-        public ActionResult Details()
-        {
-            var checkingAccount = new CheckingAccount { AccountNumber = "000012345", FirstName = "Micheal", LastName = "Sullivan", Balance = 500 };
-            return View(checkingAccount);
-        }
+        //public ActionResult Details()
+        //{
+        //    //var checkingAccount = new CheckingAccount { AccountNumber = "000012345", FirstName = "Micheal", LastName = "Sullivan", Balance = 500 };
+        //    //return View(checkingAccount);
+        //}
 
         // GET: CheckingAccount/Create
         public ActionResult Create()
